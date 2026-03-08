@@ -196,7 +196,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 6rem 0 8rem; /* Increased bottom padding */
+            padding: 6rem 0 8rem;
             position: relative;
             overflow: hidden;
         }
@@ -205,7 +205,7 @@
             max-width: 800px;
             position: relative;
             z-index: 2;
-            margin-bottom: 4rem; /* Added margin to create space */
+            margin-bottom: 4rem;
         }
 
         .hero-title {
@@ -243,7 +243,7 @@
             justify-content: center;
             flex-wrap: wrap;
             animation: fadeInUp 1s ease 0.6s both;
-            margin-bottom: 2rem; /* Added margin bottom */
+            margin-bottom: 2rem;
         }
 
         .btn-primary, .btn-secondary {
@@ -324,10 +324,10 @@
             animation-delay: 10s;
         }
 
-        /* Code Animation - FIXED POSITION - MOVED WAY DOWN */
+        /* Code Animation */
         .code-animation {
             position: absolute;
-            bottom: 3rem; /* Changed from 6rem to 3rem to move it to bottom of screen */
+            bottom: 3rem;
             left: 50%;
             transform: translateX(-50%);
             font-family: 'Monaco', 'Courier New', monospace;
@@ -462,7 +462,7 @@
             box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
         }
 
-        /* Projects Grid */
+        /* Projects Grid - Updated with new order */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -502,29 +502,29 @@
             background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8));
         }
 
+        .project-image.science-vision {
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
+        }
+        
         .project-image.study-squad {
             background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
         }
         
-        .project-image.shopaholic {
-            background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
-        }
-        
-        .project-image.sva {
-            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
-        }
-        
-        .project-image.digital-store {
-            background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
-        }
-        
-        .project-image.logo-project {
+        .project-image.taraz {
             background: linear-gradient(135deg, #2a3a4a, #1a2535);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
             color: var(--text-muted);
+        }
+        
+        .project-image.shopaholic {
+            background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
+        }
+        
+        .project-image.digital-store {
+            background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
         }
 
         .project-content {
@@ -569,6 +569,7 @@
             display: flex;
             gap: 1.2rem;
             margin-top: auto;
+            flex-wrap: wrap;
         }
 
         .project-link {
@@ -844,7 +845,7 @@
             }
             
             .hero {
-                padding: 6rem 0 6rem; /* Adjusted for mobile */
+                padding: 6rem 0 6rem;
             }
             
             .hero-buttons {
@@ -885,7 +886,7 @@
             }
             
             .code-animation {
-                bottom: 2rem; /* Adjusted for mobile - at very bottom */
+                bottom: 2rem;
                 white-space: normal;
                 text-align: center;
                 width: 90%;
@@ -915,7 +916,7 @@
             }
             
             .hero {
-                padding: 5rem 0 5rem; /* Adjusted for small mobile */
+                padding: 5rem 0 5rem;
             }
             
             .contact-form {
@@ -923,7 +924,7 @@
             }
             
             .code-animation {
-                bottom: 1.5rem; /* Even smaller on very small screens */
+                bottom: 1.5rem;
             }
         }
     </style>
@@ -973,7 +974,7 @@
             </div>
         </section>
 
-        <!-- About - College Students & Startup Focus -->
+        <!-- About -->
         <section id="about" class="about">
             <h2>About The Work Archive</h2>
             <div class="about-content">
@@ -1000,7 +1001,7 @@
             </div>
         </section>
 
-        <!-- Services - UPDATED: Removed CapCut -->
+        <!-- Services -->
         <section id="services" class="skills">
             <h2>Our Services</h2>
             <div class="skills-grid">
@@ -1041,23 +1042,24 @@
             </div>
         </section>
 
-        <!-- Projects - 7 Projects Total with NO CODE LINKS -->
+        <!-- Projects - 5 Projects with Updated Order -->
         <section id="projects" class="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <!-- 1. Digital Products Store -->
+                <!-- 1. Science Vision Academy -->
                 <div class="project-card">
-                    <div class="project-image digital-store"></div>
+                    <div class="project-image science-vision"></div>
                     <div class="project-content">
-                        <h3>Digital Products Store</h3>
-                        <p>A modern e-commerce platform for digital goods. Features secure downloads, user authentication, and seamless payment integration.</p>
+                        <h3>Science Vision Academy</h3>
+                        <p>Complete website solution for an educational institute. Features student portal, admin dashboard, and result management system.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://neelamsahu1562-sudo.github.io/digital-products-store/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://theworkarchive.github.io/science-vision-academy/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -1075,12 +1077,31 @@
                             <span class="tech-tag">Socket.io</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://theworkarchive.github.io/study-squad/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Shopaholic E-commerce -->
+                <!-- 3. Taraz Perfume Logo -->
+                <div class="project-card">
+                    <div class="project-image taraz">
+                        <i class="fas fa-crown" style="font-size: 4rem; opacity: 0.3;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Taraz Perfume</h3>
+                        <p>Luxury perfume brand identity. Created an elegant, minimalist logo with custom typography and gold accents for premium packaging.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Logo Design</span>
+                            <span class="tech-tag">Brand Identity</span>
+                            <span class="tech-tag">Packaging</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="taraz.jpg" class="project-link" target="_blank"><i class="fas fa-eye"></i> View Logo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Shopaholic -->
                 <div class="project-card">
                     <div class="project-image shopaholic"></div>
                     <div class="project-content">
@@ -1093,82 +1114,25 @@
                             <span class="tech-tag">JWT</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="shopaholic-logo.jpg" class="project-link" target="_blank"><i class="fas fa-eye"></i> View Logo</a>
+                            <a href="https://theworkarchive.github.io/shopaholic/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Science Vision Academy -->
+                <!-- 5. Digital Products Store -->
                 <div class="project-card">
-                    <div class="project-image sva"></div>
+                    <div class="project-image digital-store"></div>
                     <div class="project-content">
-                        <h3>The Science Vision Academy</h3>
-                        <p>Complete website solution for an educational institute. Features student portal, admin dashboard, and result management system.</p>
+                        <h3>Digital Products Store</h3>
+                        <p>A modern e-commerce platform for digital goods. Features secure downloads, user authentication, and seamless payment integration.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML/CSS/JS</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. Taraz Perfume Logo -->
-                <div class="project-card">
-                    <div class="project-image logo-project">
-                        <i class="fas fa-crown" style="font-size: 4rem; opacity: 0.3;"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Taraz Perfume</h3>
-                        <p>Luxury perfume brand identity. Created an elegant, minimalist logo with custom typography and gold accents for premium packaging.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Logo Design</span>
-                            <span class="tech-tag">Brand Identity</span>
-                            <span class="tech-tag">Packaging</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6. SVA Logo -->
-                <div class="project-card">
-                    <div class="project-image logo-project">
-                        <i class="fas fa-graduation-cap" style="font-size: 4rem; opacity: 0.3;"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>SVA Education</h3>
-                        <p>Distinctive emblem for The Science Vision Academy. Combines academic motifs (books, torch) with a modern crest design.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Logo Design</span>
-                            <span class="tech-tag">Mascot</span>
-                            <span class="tech-tag">Brand Guide</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 7. Tarish Clothing Logo -->
-                <div class="project-card">
-                    <div class="project-image logo-project">
-                        <i class="fas fa-tshirt" style="font-size: 4rem; opacity: 0.3;"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Tarish Clothing</h3>
-                        <p>Streetwear brand identity featuring bold typography and custom icon. Delivered with full style guide for social media and merchandise.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Logo Design</span>
-                            <span class="tech-tag">Streetwear</span>
-                            <span class="tech-tag">Style Guide</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Project</a>
+                            <a href="https://neelamsahu1562-sudo.github.io/digital-products-store/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
