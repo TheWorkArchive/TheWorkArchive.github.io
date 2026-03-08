@@ -462,7 +462,7 @@
             box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
         }
 
-        /* Projects Grid - Updated with new order */
+        /* Projects Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -502,21 +502,18 @@
             background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8));
         }
 
+        /* Updated with new online images */
         .project-image.science-vision {
-            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
+            background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
         }
         
         .project-image.study-squad {
             background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
         }
         
+        /* Taraz now has perfume image instead of gradient */
         .project-image.taraz {
-            background: linear-gradient(135deg, #2a3a4a, #1a2535);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: var(--text-muted);
+            background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80');
         }
         
         .project-image.shopaholic {
@@ -1042,11 +1039,11 @@
             </div>
         </section>
 
-        <!-- Projects - 5 Projects with Updated Order -->
+        <!-- Projects - 5 Projects with Updated Images -->
         <section id="projects" class="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <!-- 1. Science Vision Academy -->
+                <!-- 1. Science Vision Academy (with educational image) -->
                 <div class="project-card">
                     <div class="project-image science-vision"></div>
                     <div class="project-content">
@@ -1082,11 +1079,9 @@
                     </div>
                 </div>
 
-                <!-- 3. Taraz Perfume Logo -->
+                <!-- 3. Taraz Perfume (with perfume image) -->
                 <div class="project-card">
-                    <div class="project-image taraz">
-                        <i class="fas fa-crown" style="font-size: 4rem; opacity: 0.3;"></i>
-                    </div>
+                    <div class="project-image taraz"></div>
                     <div class="project-content">
                         <h3>Taraz Perfume</h3>
                         <p>Luxury perfume brand identity. Created an elegant, minimalist logo with custom typography and gold accents for premium packaging.</p>
@@ -1259,4 +1254,3 @@
     </script>
 </body>
 </html>
-
